@@ -1,0 +1,93 @@
+Q. Explain how to manage website files
+Ans. 
+Websites use several types of files, including
+HTML files, image files, media such as audio and
+video files, and CSS files
+-> Each site must follow a systematic method to
+organize its files
+-> The main folder, also called the root folder,
+contains all files and other folders for the website
+Website files are managed and organized by type
+/js
+    /classes
+    /libs
+    /app.js
+/css
+    /screen.css
+    /print.css
+/images
+    /icons
+    /logo.png
+/templates
+    /mobile
+    /base.html
+
+This structure is widely used across frameworks, examples and sites but starts to get messy quickly.
+Where would you put a reusable navigation file? or a javascript file that only relates to mobile? 
+or a css file for a certain page?
+
+Q. Insert comments in an HTML document
+Ans. The following steps add comments to a webpage
+template:
+• Place the insertion point after the <!DOCTYPE
+html> tag and then press the ENTER key to insert
+a new Line 2
+• Type <! - - This website template was
+created by: Student’s First Name
+Student’s Last Name - - > on Line 2 to add a
+comment at the beginning of the document that
+identifies the author 
+
+Ex: Example
+<!-- This is a comment -->
+
+<p>This is a paragraph.</p>
+
+<!-- Remember to add more information here -->
+
+Q. Describe and use HTML5 semantic elements
+Ans. Many web sites contain HTML code like: 
+<div id="nav"> <div class="header"> <div id="footer"> 
+to indicate navigation, header, and footer.
+
+Examples of semantic elements: 
+    <form>, <table>, and <article> - Clearly defines its content.
+
+In HTML there are some semantic elements that can be used to define different parts of a web page:  
+
+Ex: 
+    <article>
+    <footer>
+    <header>
+    <main>
+    <mark>
+    <nav>
+    <section>
+
+Q. 
+Ans. Symbols can be added to an HTML webpage by
+typing its HTML entity name or entity number
+-> Inserting an HTML character entity in the code
+displays a reserved HTML character on the
+webpage
+1 Entity name is an abbreviated name
+2 Entity number is a combination of the pound sign
+(#) and a numeric code
+
+Ex: 
+    copyright	&copy;	&#169;
+    ampersand	&amp;	&#38;
+    less than	&lt;	&#60;	
+	greater than	&gt;	&#62;
+    double quotation mark	&quot;	&#34;	
+	single quotation mark	&apos;	&#39;
+
+Q. Describe the benefits of validating web documents
+Ans.After the creation of an HTML file, the document
+is validated to verify the validity of the HTML code
+-> A validator checks for errors, indicates where they
+    are located, and suggests corrections
+-> If the validator detects an error in an HTML code,
+    it displays a warning in the header bar
+-> A Result line below the header bar shows the
+    number of errors in the document

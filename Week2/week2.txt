@@ -1,0 +1,28 @@
+Lab1 Assignment  due is tomorrow
+MVC -> Model View Controller
+
+View -> UI
+Controller -> Logic buildings
+Model -> Database
+
+
+CSS (Cascading Style Sheets) :
+We have 3 methods to use CSS styles
+1. External
+2. Internal
+3. Inline
+
+
+External -> It's basically defined in other file and then imported in the file to use it by accessing the same id defined in the external css file and the id of the div
+
+Inline -> If you gave any changes inside a div or any tag in the same line it self whether it will be defined in external class it will be over ridden by the inline styles changes
+
+
+
+
+Id & class
+Id is unique and classes can be common like if you want to apply the same changes in multple places the it will be denoted as class
+class is denoted by . in class like .footer { background-color: antiquewhite }
+
+And if you want to define a change that only should be changed only one place then in that case it will be changes by accessing the id
+id is denoted by # in class like #footer { background-color: aqua }
