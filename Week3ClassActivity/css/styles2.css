@@ -1,0 +1,17 @@
+body{
+    background-color: #D9F1C1;
+}
+header, nav, footer { font-family: Calibri, Arial, sans-serif;
+}
+.addrightmargin { margin-right: 2%;
+}
+#main{
+    font-family: Garamond, "Times New Roman", serif;
+    background-color: #F0F9E6;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+footer { font-size: 0.75em;
+    text-align: center;
+    }

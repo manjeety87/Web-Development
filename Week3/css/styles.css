@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(159, 210, 242)
+}
+
+#wrapper{
+    padding:15px;
+    padding-bottom: 20px;
+    width: 80%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(45, 143, 204);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #c09cf4;
+}
+a{
+    display:block
+}
+h1{
+    display: inline;
+}
+
+header{
+    background-color: rgb(112, 41, 218);
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px 15px 100px 10px;
+}
+
+p{
+ text-indent: 20px;   
+}
+
+h2{
+    background-color: blue;
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+.red{
+    color:red
+}
