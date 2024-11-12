@@ -1,0 +1,185 @@
+﻿<!DOCTYPE HTML>
+<!-- SYST10049 Module 04 / More HTML/CSS -->
+<html>
+<head>
+	<title>SYST10049 - Module 04</title>
+	<meta charset="utf-8">
+
+	<link href="../css/main.css" rel="stylesheet">
+	<link href="../css/print.css" rel="stylesheet" media="print">
+  <link href="../images/web.png" rel="icon" type="image/png">	
+	
+	<style>
+		.flexContainer {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 auto;
+			color: navy;
+		}
+		.flex1 { 
+			flex: 1; 
+			font-weight: bold;
+		}
+		.flex2 { flex: 5; }
+
+		#background th { width: 40%; }
+		#background td { border-bottom: thin solid black;}
+
+		.refprof {
+			font-weight: normal; font-style: normal;
+			font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+			color: navy;
+		}
+		.linkbar {
+		grid-area: linkbar; 
+		background-color:  rgba(253, 245, 230, 0.6); /* oldlace */
+		color: navy; 
+		font-style: italic; 
+		text-align: center;
+		padding: 5px;
+		font-weight: bold;
+		font-size: 1.1em;
+	}
+	</style>
+	
+</head>
+<body class="site">
+	<header class="common header headfoot">
+		SYST10049 / More HTML and CSS 
+	</header>
+	
+	<section class="linkbar">
+		<a href="../SupplementaryPages/linkbar.html" target="_blank">Click to display <span class="refprof">Reference Page</span> in a New Tab</a>
+	</section>
+	
+	<section class="common content">
+		<table>
+			<tr><td class="subHead">Today's Class...</td>
+					<td><img src="../images/html.png" width="100px"><img src="../images/css.png" width="100px"></td></tr>
+		</table>
+		<ul id="class">
+			<li>
+				<span class="subHead">More HTML and CSS</span>
+					<section class="flexContainer">
+						<div class="flex1">Review</div>
+						<div class="flex2">
+							<strong>Meta tags</strong> provide metadata (information about other data) to the HTML document. Metadata is not displayed on the page but is parsed to retrieve the underlying definition or description.<br>
+							<a href="https://www.w3schools.com/tags/tag_meta.asp" target="_blank"><img src="../images/url.png" width="25px">Further Meta documentation</a><br>
+						</div>
+					</section><br>
+					<section class="flexContainer">
+						<div class="flex1">Browser Icon</div>
+						<div class="flex2">
+							Icons appear in the tab of the browser page. Icons for the browser tab are linked in in the &lt;head&gt; section of your .html page. <br>
+								<span class="line">&lt;link rel="icon" href="images/favicon.ico" type="image/png"&gt;</span>
+						</div>
+					</section><br>
+					<section class="flexContainer">
+						<div class="flex1">Anchor tag options</div>
+						<div class="flex2">
+							<ul>
+								<li>Links to other pages within a web site<br>
+										<span class="line">&lt;a href="htmPages/about.html"&gt;About Me&lt;/a&gt;</span></li>
+								<li>Links to other pages on the web/external (target="_blank" will open page in a new tab)<br>
+										<span class="line">&lt;a href="https://www.google.ca/" target="_blank"&gt;GOOGLE&lt;/a&gt;</span></li>
+								<li>Bookmarks in current page<br>
+										<span class="line">&lt;a href="#chapter3"&gt;Go to Chapter 3&lt;/a&gt;</span>
+								</li>
+								<li>Email Creation (must have an email system installed/configured on your system for this to work - for Example: Outlook Mail)<br>
+										<span class="line">&lt;a href="mailto:student@gmail.com?subject=Welcome%20Back"&gt;Email to Student&lt;/a&gt;</span><br>
+										<a href="https://www.w3schools.com/TAGs/tag_a.asp" target="_blank"><img src="../images/url.png" width="25px">More on anchor tags</a>
+								</li>
+								<li>Other<br>
+									<span class="line">&lt;a href="tel:9055551212" ...&gt; will initiate a telephone call (used for Mobile sites)<br>
+																		 &lt;a href="sms:9055551212" ...&gt; will initiate a text message (used for Mobile sites)<br>
+																		 &lt;a href="mms:9055551212" ...&gt; will initiate a multimedia text message (used for Mobile sites)
+																		 
+								</li>
+							</ul>
+						</div>
+					</section><br>
+					<section class="flexContainer">
+						<div class="flex1">Background options</div>
+						<div class="flex2">
+							<ul>
+								<li>You can use the &lt;body&gt; tag to give the entire site a background color/image or can be used for any other container tag<br>
+								<span class="line">body { background-color: bisque; } <span class="comment">/* bisque color background */</span></span><br>
+								<span class="line">section { background-color: rgba(255, 0, 0, 0.5) } <span class="comment">/* 50% transparent red background for all sections*/</span></span><br>
+								<a href="../SupplementaryPages/backgroundExamples.html">Background Examples For Reference</a></li><br>
+								
+								<li>Use the background-image style with options to include a background image<br>
+								<span class="line">body { background-image: url("back.gif"); }</span><br>
+								<table id="background">
+									<tr><th colspan="2">Use <em>background-size:</em> options and <em>background-repeat:</em> options to decide how image is displayed:</th></tr>
+									<tr><th class="line">background-size: 100px 200px;</th><td>Image size specified</td></tr>
+									<tr><th class="line">background-size: cover;</th><td>Scales the background image so that the smallest dimension reaches the maximum width/height of the element</td></tr>
+									<tr><th class="line">background-size: contain;</th><td>Ensures that the entire background-image will display by showing the image at a scaled size</td></tr>
+									<tr><th class="line">background-size: 100% auto;</th><td>Width is 100% and height is set to auto to keep aspect ratio</td></tr>
+									<tr><th colspan="2" style="text-align:center;">------------------------------------------------</th></tr>
+									<tr><th class="line">background-repeat: repeat;</th><td>Image repeats both horizontally and vertically</td></tr>					
+									<tr><th class="line">background-repeat: repeat-x;</th><td>Image repeats horizontally only</td></tr>					
+									<tr><th class="line">background-repeat: repeat-y;</th><td>Image repeats vertically only</td></tr>
+									<tr><th class="line">background-repeat: no-repeat;</th><td>Image is not repeated</td></tr>					
+								</table></li>
+							</ul>
+						</div>
+					</section><br>
+					<section class="flexContainer">
+						<div class="flex1">Colours</div>
+						<div class="flex2">
+							<ul>
+								<li>HTML Basic Colours
+								<table style="width: 75%; color: black;">
+								<tr><td>Aqua</td><td>Black</td><td>Blue</td><td>Fuchsia</td></tr>
+								<tr><td>Gray</td><td>Green</td><td>Lime</td><td>Maroon</td></tr>
+								<tr><td>Navy</td><td>Olive</td><td>Purple</td><td>Red</td></tr>
+								<tr><td>Silver</td><td>Teal</td><td>White</td><td>Yellow</td></tr>
+								</table>
+								</li>
+								<li><p><a target="_blank" href="../SupplementaryPages/Other_Named_Colours.pdf">
+										<img src="../images/url.png" width="25px">Other Named Colours</a></p>
+								</li>
+								<li><strong>Ways of determining colour:</strong>
+									<ul><li><strong>RGB Percentages</strong><br><span class="line">rgb (percent red, 
+											percent green, percent blue) / ex. rgb (40%, 50%, 56%); - medium blue colour</span></li>
+										<li><strong>HSL (hue-saturation-light)</strong><br><span class="line">hsl(#, %, %) / ex. hsl(0, 100%, 50%); shows base red</span></li>
+										<li><strong>RGB Decimal Integer Settings</strong><span class="line">rgb (integerR, integerG, integerB) / ex. rgb(255, 255, 0); shows yellow</span></li>
+										<li><strong>Hexadecimal Settings</strong><br><span class="line">#RedGreenBlue; / ex. color: #69623D; shows desert green</span></li>
+										<li><a target="_blank" href="https://www.w3schools.com/colors/colors_picker.asp">
+												<strong><img src="../images/url.png" width="25px">Colour Picker for finding RGB and HSL values</strong></a></li>
+									</ul>
+								</li><br>			
+								<li><strong>Transparency - 4th parameter / Value from 0-1</strong>
+									<ul><li><span class="line">rgba(255, 0, 0, 0.5)</span> generates red with 50% opacity (50% transparency)</li>
+										<li><span class="line">hsla (120, 100%, 50%, 0.3)</span> generates green with 30% opacity (70% transparency)</li>
+									</ul>
+									</li>
+							</ul>
+						</div>
+					</section><br>
+					<section class="flexContainer">
+						<div class="flex1">Pseudo-elements<br>Pseudo classes </div>
+						<div class="flex2">
+							<a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank"><img src="../images/url.png" width="25px">w3Schools</a> provides a good overview of <strong>pseudo-elements</strong> and <strong>pseudo-classes</strong>.<br>
+							<span class="line">Be sure to read the blocked section for <em>Notice the double colon notation - ::first-line versus :first-line</em>. This explains the use of :: versus : preceding elements/classes.</span>
+						</div>
+					</section><br>					
+					<section class="flexContainer">
+						<div class="flex1">Gradients</div>
+						<div class="flex2">
+							<a href="https://www.w3schools.com/css/css3_gradients.asp" target="_blank"><img src="../images/url.png" width="25px">w3Schools</a> explanations and examples for linear and radial gradients.
+						</div>
+					</section><br>							
+			</li>
+		</ul>
+		<div class="owner"></div>
+	</section>
+	
+	<section class="linkbar">
+		<!-- Update professor.html to include your footer info on all pages automatically -->
+				<a href="../SupplementaryPages/professor.html">Click to Display 
+					<span class="refprof">
+					Advising / Professor Information</span></a>
+	</section>
+</body>
+</html>

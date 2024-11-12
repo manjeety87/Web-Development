@@ -1,0 +1,108 @@
+/* SYST10049-main.css */
+.site {
+	font-family: Times New Roman;
+	font-size: 1.2em;
+}
+
+/* Common CSS for all boxes */
+.common {
+	border-radius: 15px 0px 0px 0px;	
+	padding: 5px;
+}
+
+/* For header and footer common CSS */
+.headfoot {
+	background-color: navy;
+	text-align: center;	
+	color: white;
+	font-weight: bold;
+}
+.header {
+	font-size: 1.25em;}
+
+.footer {
+	background-color:  rgba(253, 245, 230, 0.6); /* oldlace */
+	color: navy; 
+	font-style: italic; 
+	text-align: center;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 1.1em;  }
+/* ------- */
+
+/* .content {grid-area: content;} */
+
+/* .linkbar {
+		background-color:  rgba(253, 245, 230, 0.6);
+		color: navy; 
+		font-style: italic; 
+		text-align: center;
+		padding: 5px;
+		font-weight: bold;
+		font-size: 1.1em;
+	} */
+
+.reference {
+	background-color: rgba(253, 245, 230, 0.6); /* oldlace */
+	border-radius: 15px 15px 0px 0px;
+	padding: 0px 5px 0px 5px;
+	border-left: thin solid navy;
+	border-right: thin solid navy;
+}
+
+.subHead {
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+ul#class li {
+	list-style-image: url(../images/sheridanIcon.png);
+}
+
+ul#class li li {
+	list-style-image: none;
+	list-style-type: square;
+}
+
+ul#ref li {
+	list-style-type: square;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+ul#ref li li {
+	list-style-type: circle;
+	font-weight: normal;
+	line-height: 1;
+	margin-bottom: 5px;
+}
+
+hr {
+height: 7px;
+width: 80%;
+border: 1;
+box-shadow: inset 0 9px 9px -3px rgba(11, 99, 184, 0.8);
+border-radius: 5px;
+text-align: left;
+}
+#back { 
+	color: rgba(0,0,0,0.75); 
+	font-size: 0.75em; 
+	font-style: italic; 
+	font-weight: bold;
+	border-radius: 10px;
+	background-color: silver;
+	font-family: Times New Roman;}
+
+.owner { text-align: right; font-size: 0.5em; font-style: italic; color: navy; }
+
+.comment { color: green; font-weight: normal; }
+
+.blue { color: navy; }
+
+.line {
+	font-weight: bold;
+	font-style: italic;
+	margin-left: 7px;
+	color: black;
+}

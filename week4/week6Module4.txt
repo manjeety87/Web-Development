@@ -1,0 +1,2 @@
+Practice psuedo codes
+Markers it's can be used for ordered or unordered list it can apply changes to the dots or numbers

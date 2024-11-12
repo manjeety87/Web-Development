@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/script.js"></script>
+  </head>
+  <body>
+    <form name="registration">
+      <label for="name">Name :</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+      <br />
+      <br />
+      <label for="age">Age :</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required autofocus />
+      <br />
+      <br />
+      <label for="dateOfBirth">Date of Birth :</label>
+      <input type="date" id="dateOfBirth" name="dateOfBirth" placeholder="Enter your DOB" />
+      <br />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+      <br />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required />
+      <br />
+      <br />
+      <input type="submit" value="Register" />
+      <br />
+      <br />
+      <p>Choose your favorite Web language:</p>
+      <input type="radio" id="html" name="fav_language" value="HTML" />
+      <label for="html">HTML</label><br />
+      <input type="radio" id="css" name="fav_language" value="CSS" />
+      <label for="css">CSS</label><br />
+      <input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      />
+      <label for="javascript">JavaScript</label>
+      <br />
+      <br />
+      <p>Choose your favorite subjects in this semester :</p>
+      <input type="checkbox" id="webDevelopment" name="fav_subject" value="WEB_DEVELOPMENT" />
+      <label for="webDevelopment">Web Development</label><br />
+      <input type="checkbox" id="python" name="fav_subject" value="PYTHON" />
+      <label for="python">Pyhton</label><br />
+      <input
+        type="checkbox"
+        id="java"
+        name="fav_subject"
+        value="JAVA"
+      />
+      <label for="java">Java</label>
+    </form>
+  </body>
+</html>

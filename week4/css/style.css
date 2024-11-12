@@ -1,0 +1,29 @@
+body {
+  /* background-image: url("../images/background.jpg"); */
+  background-size: cover;
+  /* width: 100%; */
+  background-repeat: repeat-x;
+  background-size: 250px 200px;
+  /* opacity: 0.8; */
+  /* background-image: radial-gradient(#000000 0.5px, transparent 0.5px),
+    radial-gradient(#000000 0.5px, #ffffff 0.5px); */
+  /* background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  ); */
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+p::first-line {
+  font-size: 48px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #2475B0;
+}

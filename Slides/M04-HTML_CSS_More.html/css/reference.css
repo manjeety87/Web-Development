@@ -1,0 +1,23 @@
+/* SYST10049-reference.css */
+.site2 {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"header"
+		"content"
+		"footer";
+	grid-gap: 0.5em;
+	font-family: Times New Roman;
+	font-size: 1.2em;
+}
+
+h3 {
+	text-align: center;
+	font-style: italic;
+	margin-bottom: 0px;
+}
+div {
+	text-align: center;
+	line-height: 1.5;
+}

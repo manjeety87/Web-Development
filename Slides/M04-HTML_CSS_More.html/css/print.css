@@ -1,0 +1,83 @@
+/* SYST10049-print.css */
+.site {
+	display: block;
+	font-family: Times New Roman;
+	font-size: 1em;
+}
+
+.site2 {
+	display: block;
+	font-size: 1em;
+}
+
+/* Common CSS for all boxes */
+.common {
+	border-radius: 0px;
+	padding: 5px;
+}
+
+/* For header and footer common CSS */
+.headfoot {
+	background-color: white;  /* remove colour for printing */
+	text-align: center;	
+	color: black;
+	font-weight: bold;
+
+}
+.header { font-size: 1em; }
+.footer { display:none; }
+/* ------- */
+
+.content {
+	background-color: white;  /* remove colour for printing */
+	color: black;
+}
+
+.reference { display: none; }
+
+.subHead {
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+ul#class li {
+	list-style-image: url(../images/sheridanIcon.png);
+}
+
+ul#class li li {
+	list-style-image: none;
+	list-style-type: square;
+}
+
+ul#ref li {
+	list-style-type: square;
+	font-weight: bold;
+	line-height: 1.1;
+}
+
+ul#ref li li {
+	list-style-type: circle;
+	font-weight: normal;
+	line-height: 1;
+	margin-bottom: 5px;
+}
+
+hr {
+height: 7px;
+width: 80%;
+border: 1;
+box-shadow: inset 0 9px 9px -3px rgba(11, 99, 184, 0.8);
+border-radius: 5px;
+text-align: left;
+}
+
+#back { 
+	color: rgba(0,0,0,0.75); 
+	font-size: 0.75em; 
+	font-style: italic; 
+	font-weight: bold;
+	border-radius: 10px;
+	background-color: silver;
+	font-family: Times New Roman;}
+
+.owner { text-align: right; font-size: 0.5em; font-style: italic; color: navy; }
